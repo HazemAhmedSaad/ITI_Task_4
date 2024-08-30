@@ -1,0 +1,76 @@
+body {
+    height: 250vh;
+}
+
+img {
+    animation: transparent 1s infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    margin: 30px auto;
+    display: block;
+    width: 450px;
+}
+
+@keyframes transparent {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+button {
+    margin: auto;
+    padding: 20px 150px;
+    font-size: 30px;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    background-color: lightsalmon;
+    color: #000;
+}
+
+button:hover {
+    animation-name: change-box-shadow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes change-box-shadow {
+    0% {
+        box-shadow: 1px 1px 10px 20px lightblue;
+    }
+
+    50% {
+        box-shadow: 1px 1px 5px 10px lightpink;
+    }
+
+    100% {
+        box-shadow: 1px 1px 15px 20px lightgreen;
+    }
+}
+
+div {
+    margin: auto;
+    margin-top: 200px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: move-ball-up-down 2s infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes move-ball-up-down {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(500px);
+    }
+}
